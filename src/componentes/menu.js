@@ -19,16 +19,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function ButtonAppBar() {
-    const classes = useStyles();
+    const estilo = useStyles();
 
     return (
-        <div className={classes.root}>
+        <div className={estilo.root}>
             <AppBar position="static">
                 <Toolbar>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                    <IconButton edge="start" className={estilo.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" className={classes.title}>
+                    <Typography variant="h6" className={estilo.title}>
                         Elvin González
                     </Typography>                
                 </Toolbar>

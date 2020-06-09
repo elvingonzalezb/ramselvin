@@ -1,7 +1,9 @@
 import React from 'react';
-import logo from './foto.jpg';
 import './App.css';
 import Menu from './componentes/menu';
+import Imagen from './componentes/imagen'
+import Cuerpo from './componentes/cuerpo'
+import Pie from './componentes/pie'
 
 function App() {
   return (
@@ -9,19 +11,10 @@ function App() {
       <Menu></Menu>
 
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-            Pagina en Construcción
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/elvingonzalezb"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
+        <Imagen/>
+        <Cuerpo></Cuerpo>
       </header>
+        <Pie></Pie>
     </div>
   );
 }
