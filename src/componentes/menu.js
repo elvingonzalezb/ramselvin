@@ -1,38 +1,25 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    menuButton: {
-        marginRight: theme.spacing(2),
-    },
-    title: {
-        flexGrow: 1,
-    },
-}));
 
 export default function ButtonAppBar() {
-    const estilo = useStyles();
-
+    
     return (
-        <div className={estilo.root}>
-            <AppBar position="static">
-                <Toolbar>
-                    <IconButton edge="start" className={estilo.menuButton} color="inherit" aria-label="menu">
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography variant="h6" className={estilo.title}>
-                        Elvin González
-                    </Typography>                
-                </Toolbar>
-            </AppBar>
-        </div>
+        <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+               
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="/" class="button is-primary">
+                        Sign up
+                        </a>
+                        <a href="/" class="button is-warning">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     );
 }
