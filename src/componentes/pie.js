@@ -18,7 +18,7 @@ const Pie = () => {
               <span class="icon is-medium has-text-success">             
                 <i class="fa fa-twitter fa-2x"></i>
               </span>
-            </a>       
+            </a>
           </div>
           <section/>
         </footer>
