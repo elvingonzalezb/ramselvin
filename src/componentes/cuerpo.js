@@ -1,28 +1,24 @@
 import React from 'react'
-import Tarjeta from '../componentes/tarjeta'
+import logo from '../foto.jpg'
 
 const Cuerpo = () => {
     return(
-        <body>
-            <section class="section is-primary">
-                <div class="container">
-                    <h1 class="title">Developer</h1>
-                    <h2 class="subtitle">
-                     <strong></strong>
-                    </h2>
-                </div>
-            </section>
-            <div className="has-margin-top-2">                        
-                <a  className="button has-paddiing-top-4 is-medium is-rounded is-danger"
-                    href="https://github.com/elvingonzalezb"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
-                <Tarjeta/>
+        <header className="masthead bg-primary text-white text-center">
+        <div className="container d-flex align-items-center flex-column">
+        
+            <img className="masthead-avatar avatar mb-5" src={logo} alt="foto elvin gonzalez" />
+           
+            <h1 className="masthead-heading text-uppercase mb-0">Developer</h1>
+      
+            <div className="divider-custom divider-light">
+                <div className="divider-custom-line"></div>
+                <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
+                <div className="divider-custom-line"></div>
             </div>
-        </body>
+            
+            <p className="masthead-subheading font-weight-light mb-0">FrontEnd - BackEnd - Base de datos</p>
+        </div>
+    </header>
       
    
     )
