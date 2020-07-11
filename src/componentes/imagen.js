@@ -1,11 +1,10 @@
 import React from 'react'
-import logo from '../foto.jpg'
 
 const Imagen = () => {
     return (
-        <figure class="image is-256x256">
-            <img class="is-rounded" src={logo} alt="foto elvin gonzalez"/>
-        </figure>
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright © 2020</small></div>
+        </div>
     )
 }
 

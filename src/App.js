@@ -2,22 +2,21 @@ import React from 'react';
 import './App.css';
 import 'bulma/css/bulma.min.css'
 import Menu from './componentes/menu';
-import Imagen from './componentes/imagen'
+import Copy from './componentes/imagen'
 import Cuerpo from './componentes/cuerpo'
 import Pie from './componentes/pie'
 import Seccion from './componentes/seccion'
+import Portafolio from './componentes/tarjeta'
 
 function App() {
   return (
     <div className="App">
       <Menu></Menu>
-
-      <header className="App-header">
-        <Imagen/>
-        <Cuerpo></Cuerpo>
-      </header>
+      <Cuerpo></Cuerpo>
+      <Portafolio></Portafolio>
       <Seccion/>
-        <Pie></Pie>        
+      <Pie></Pie> 
+      <Copy/>       
     </div>
   );
 }
